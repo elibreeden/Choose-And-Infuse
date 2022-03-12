@@ -1,0 +1,30 @@
+html { background: #111; }
+body { 
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+
+h1 { 
+   font-family: 'Abril Fatface', cursive;
+	font-size: 28px;
+ }
+
+h2 { 
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+}
+
+h3 { 
+	font-family: 'Abril Fatface', cursive;
+}
+p1 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 18px
+}
+.center {
+	height: auto;
+	width: 900px;
+
+}
