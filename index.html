@@ -1,85 +1,84 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="box-practice.css">
 <meta charset="utf-8">
-<title>index.html</title>
+<title>index</title>
 	<style>
-		.item1 {grid-area: logo;}
-		.item2 {grid-area: navigation;}
-		.item3 {grid-area: sidebar;}
-		.item4 {grid-area: sidephoto;}
-		.item5 {grid-area: main;}
-		.item6 {grid-area: firstitem;}
-		.item7 {grid-area: seconditem;}
-		.item8 {grid-area: thirditem;}
+		.item1 {grid-area: sidephoto;}
+		.item2 {grid-area: main;}
+		.item3 {grid-area: firstitem;}
+		.item4 {grid-area: seconditem;}
+		.item5 {grid-area: thirditem;}
 		
 		.grid-container {
 		  display: grid;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			align-content: center;
   grid-template-areas:
-    'logo navigation sidebar'
     'sidephoto main main'
     'firstitem seconditem thirditem';
-  gap: 10px;
+  gap: 30px;
   background-color: white;
   padding: 10px;
 				
 		}
 		.grid-container > div {
-			background-color: lightgray;
+			background-color: white;
 			text-align: center;
 			padding: 20px;
 			font-size: 18px;
 		}
 	</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="box-practice.css">
 </head>
-
+<header>
+		<picture><img class="logo" src="https://i.imgur.com/zGN6YTY.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="order.html">order</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="reviews.html">reviews</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="#"><button>Contact</button></a>
+</header>
 <body>
 	<center>
 	<div class="center">
 	<div class="grid-container">
-		<div class="item1">
-			<picture><img src="https://i.imgur.com/zGN6YTY.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+	<div class="item1">
+	<picture><img src="https://i.imgur.com/hGghO0k.jpg" width="350" height="400" alt="Mixed Drink with Fig And Thyme"/></picture>
 		</div>
-		<div class="item2">
-			<a href="index.html">home</a>
-			<a href="order.html">order</a>
-			<a href="about.html">about</a>
-			<a href="contact.html">contact</a>
-			<a href="reviews.html">reviews</a>
-		</div>
-		<div class="item3">
-			<input type="text" placeholder="Search.." size="12px"> 
-		</div>
-		<div class="item4">
-			<picture><img src="https://i.imgur.com/2UZmbho.jpg" width="250" height="300" alt="Mixed Drink with Fig And Thyme"/></picture>
-		</div>
-		<div class="item5">
-			<h1>Choose How (And If) You Drink</h1>
-			<p1>Choose & Infuse is the <i>only</i> mixed drink subscription box that allows you to choose whether you would like alcoholic or non-alcoholic spirits included in your box.</p1>
-			<p></p>
-			<p1><b>Starting at just $60 per box, skip or cancel anytime.</b></p1>
-		</div>
-		<div class="item6">
+	<div class="item2">
+		<h2>Choose How (and If) You Drink</h2>
+			<br>
+		<p1>
+			Choose and Infuse is the only all-inclusive mixed drink subscription box that allows you to choose whether you would like alcoholic or non-alcoholic spirits included in your box. 
+			<br><br><br>
+			<strong>Starting at just $60 per box, skip or cancel anytime.</strong>
+			</p1></div>
+		
+			<div class="item3">
 			<picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
 			<h2>Product Name</h2>
 			<p2>$60.00 <i>In Stock</i></p2>
 		</div>
-		<div class="item7">
+		<div class="item4">
 		<picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
 			<h2>Product Name</h2>
 			<p2>$60.00 <i>In Stock</i></p2>
 		</div>
-		<div class="item8">
+		<div class="item5">
 		<picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
 			<h2>Product Name</h2>
 			<p2>$60.00 <i>In Stock</i></p2>
-		</div>
-		</div></div>
-		</center>
+		</div></div></div>
+</center>
 </body>
 </html>
-
