@@ -1,87 +1,163 @@
 <!doctype html>
-<html>
-<head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="box-practice.css">
+<html><head>
 <meta charset="utf-8">
-<title>order.html</title>
+	<title>order.html</title>
 	<style>
-		.item1 {grid-area: logo;}
-		.item2 {grid-area: navigation;}
-		.item3 {grid-area: sidebar;}
-		.item4 {grid-area: productcat1;}
-		.item5 {grid-area: itemlisting1;}
-		.item6 {grid-area: itemlisting2;}
-		.item7 {grid-area: itemlisting3;}
-		.item8 {grid-area: productcat2;}
-		.item9 {grid-area: itemlisting4;}
-		.item10 {grid-area: itemlisting5;}
-		.item11 {grid-area: itemlisting6;}
-		.item12 {grid-area: footerside;}
-		.item13 {grid-area: footertext;}
+		.item1 {grid-area: list1;}
+		.item2 {grid-area: list2;}
+		.item3 {grid-area: list3;}
+		.item4 {grid-area: list4;}
+		.item5 {grid-area: list5;}
+		.item6 {grid-area: list6;}
+		.item7 {grid-area: list7;}
+		.item8 {grid-area: list8;}
+		.item9 {grid-area: list9;}
+		.item10 {grid-area: list10;}
 		
 		.grid-container {
 		  display: grid;
   grid-template-areas:
-    'logo navigation sidebar'
-    'productcat1 productcat1 productcat1'
-    'itemlisting1 itemlisting2 itemlisting3'
-	'productcat2 productcat2 productcat2'
-	  'itemlisting4 itemlisting5 itemlisting6'
-	  'footerside footertext footertext';
+    'list1 list2 list3 list4 list5' 
+    'list6 list7 list8 list9 list10';
+    'list6 list7 list8 list9 list10';
   gap: 10px;
-  background-color: white;
+			  back;
+ground-color: white;
   padding: 10px;
 				
 		}
 		.grid-container > div {
-			background-color: lightgray;
+			background-color: white;
 			text-align: center;
 			padding: 20px;
 			font-size: 18px;
 		}
 	</style>
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="box-practice.css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-<body>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<header>
+		<picture><img class="logo" src="https://i.imgur.com/zGN6YTY.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="order.html">order</a></li>
+				<li><a href="about.html">how it works</a></li>
+				<li><a href="reviews.html">reviews</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+<body onLoad="MM_preloadImages('images/inabox2.png')">
+<center><h4>Current Monthly Box</h4></center>
+	<div class="rowdivide">
+	  <div class="column2" datacolumn-id="2">
+	
+		</div>
+		<div class="column2" datacolumn-id="2">
+			<picture><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Non Alcoholic','','https://i.imgur.com/78LZJAr.png',1)"><img src="https://i.imgur.com/usVaPFx.png" alt="" width="375" id="Non Alcoholic"></a></picture>
+		</div>
+	  <div class="column2" datacolumn-id="2">
+			<center>
+				<br>
+				<br>
+				<h3>CURRENT BOX: <br>
+			LAVENDER ELDERFLOWER SPRITZ</h3>
+
+			<p2>Sit back and enjoy the dawn of Spring with our floral, 
+				<br>bright mixology box of the month. Perfect for a breezy 
+				<br>afternoon and sipping slowly.<br>
+				<br><i>Choose from top-shelf Absolut Vodka and
+				<br>Elderflower Gin Liqueur or herbaceous Seedlip
+				<br>Spice 94 and Elderflower Elixir. </i></p2>
+			<br>
+			<br>
+			<button></button>
+			</center>
+		</div>
+	  <div class="column2" datacolumn-id="2">
+		</div>
+	</div>
+<hr class="solid">
+<center><h4>Mixed Drink Boxes</h4></center>
 	<div class="grid-container">
 		<div class="item1">
-			<picture><img src="https://i.imgur.com/zGN6YTY.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+		<picture><img class="prdimg" src="https://i.imgur.com/di9WcUk.jpg" width="250" height="175" alt="Photo of Fig Rosemary Drink"/></picture>
+			<h3>Fig & Rosemary Bellini Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
 		</div>
 		<div class="item2">
-			<a href="index.html">home</a>
-			<a href="order.html">order</a>
-			<a href="about.html">about</a>
-			<a href="contact.html">contact</a>
-			<a href="reviews.html">reviews</a>
+		<picture><img class="prdimg" src="https://i.imgur.com/yDGJUX4.jpg" width="250" height="175" alt="Photo of Gin and Tonic Ingredients"/></picture>
+			<h3>Classic Gin & Tonic Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
 		</div>
 		<div class="item3">
-			<input type="text" placeholder="Search.." size="12px"> 
+		<picture><img class="prdimg" src="https://i.imgur.com/wh2wbPV.png" width="250" height="175" alt="Photo of Grapefruit Gin Infusion Box"/></picture>
+			<h3>Grapefruit Gin Infusion Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
 		</div>
-		<div class="item4">PRODUCT CATEGORY 1</div>
-		<div class="item5"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item6"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item7"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item8">PRODUCT CATEGORY 2</div>
-		<div class="item9"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item10"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item11"><picture><img src="https://i.imgur.com/qNQnsSA.png" width="150" height="100" alt="product image"/></picture>
-			<h2>Product Name</h2>
-			<p2>$60.00 <i>In Stock</i></p2></div>
-		<div class="item12">FOOTER</div>
-		<div class="item13">footer text</div>
-	</div>
+		<div class="item4">
+		<picture><img class="prdimg" src="https://i.imgur.com/NSRy55B.jpg" width="250" height="175" alt="Photo of Lemongrass Moscow Mule Drink"/></picture>
+			<h3>Lemongrass Moscow Mule Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item5">
+		<picture><img class="prdimg" src="https://i.imgur.com/wFO9I5Z.jpg" width="250" height="175" alt="Photo of Strawberry Mint Smash Drink"/></picture>
+			<h3>Strawberry Mint Smash Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item6">
+			<picture><img class="prdimg" src="https://i.imgur.com/P5RKDvG.jpg" width="250" height="175" alt="Photo of Rhubarb Rose Drink"/></picture>
+			<h3>Rhubarb Rose Infusion Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item7">
+		<picture><img class="prdimg" src="https://i.imgur.com/S1NNTgB.jpg" width="250" height="175" alt="Photo of Peach Bourbon Smash Drink"/></picture>
+			<h3>Peach Bourbon Smash Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item8">
+		<picture><img class="prdimg" src="https://i.imgur.com/rcRx6dB.jpg" width="250" height="175" alt="Photo of Strawberry Infusion Box"/></picture>
+			<h3>Strawberry Infusion Kit</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item9">
+		<picture><img class="prdimg" src="https://i.imgur.com/mUSpT73.jpg" width="250" height="175" alt="Photo of Grapefruit Spritzer Drink"/></picture>
+			<h3>Grapefruit Spritzer Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item10">
+		<picture1><img class="prdimg" src="https://i.imgur.com/fSP1kJ4.jpg" width="250" height="175" alt="Photo of Spicy Mulled Sangria Drink"/></picture1>
+			<h3>Spicy Mulled Sangria Box</h3>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		</div>
+	<hr class="solid">
+	<center><h4>Mixology Tools & Accessories</h4></center>
 </body>
 </html>
